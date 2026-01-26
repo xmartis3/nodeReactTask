@@ -1,0 +1,402 @@
+[
+  {
+    "id": "node-01",
+    "name": "Worker Node A",
+    "status": "online",
+    "cpuUsage": 8,
+    "memoryUsage": 12.1,
+    "timestamp": "2023-10-27T10:36:00Z"
+  },
+  {
+    "id": "node-02",
+    "name": "Worker Node B",
+    "status": "online",
+    "cpuUsage": 18,
+    "memoryUsage": 11.1,
+    "timestamp": "2023-10-27T12:04:00Z"
+  },
+  {
+    "id": "node-03",
+    "name": "Worker Node C",
+    "status": "online",
+    "cpuUsage": 80,
+    "memoryUsage": 7.2,
+    "timestamp": "2023-10-27T10:18:00Z"
+  },
+  {
+    "id": "node-04",
+    "name": "Worker Node D",
+    "status": "online",
+    "cpuUsage": 34,
+    "memoryUsage": 8.5,
+    "timestamp": "2023-10-27T10:23:00Z"
+  },
+  {
+    "id": "node-05",
+    "name": "Worker Node E",
+    "status": "online",
+    "cpuUsage": 88,
+    "memoryUsage": 11.5,
+    "timestamp": "2023-10-27T11:18:00Z"
+  },
+  {
+    "id": "node-06",
+    "name": "Worker Node F",
+    "status": "online",
+    "cpuUsage": 80,
+    "memoryUsage": 5.0,
+    "timestamp": "2023-10-27T12:21:00Z"
+  },
+  {
+    "id": "node-07",
+    "name": "Worker Node G",
+    "status": "online",
+    "cpuUsage": 25,
+    "memoryUsage": 11.4,
+    "timestamp": "2023-10-27T11:18:00Z"
+  },
+  {
+    "id": "node-08",
+    "name": "Worker Node H",
+    "status": "online",
+    "cpuUsage": 32,
+    "memoryUsage": 15.3,
+    "timestamp": "2023-10-27T11:23:00Z"
+  },
+  {
+    "id": "node-09",
+    "name": "Worker Node I",
+    "status": "online",
+    "cpuUsage": 53,
+    "memoryUsage": 2.3,
+    "timestamp": "2023-10-27T12:33:00Z"
+  },
+  {
+    "id": "node-10",
+    "name": "Worker Node J",
+    "status": "online",
+    "cpuUsage": 38,
+    "memoryUsage": 13.1,
+    "timestamp": "2023-10-27T12:23:00Z"
+  },
+  {
+    "id": "node-11",
+    "name": "Worker Node K",
+    "status": "online",
+    "cpuUsage": 20,
+    "memoryUsage": 15.6,
+    "timestamp": "2023-10-27T11:43:00Z"
+  },
+  {
+    "id": "node-12",
+    "name": "Worker Node L",
+    "status": "online",
+    "cpuUsage": 42,
+    "memoryUsage": 13.4,
+    "timestamp": "2023-10-27T12:19:00Z"
+  },
+  {
+    "id": "node-13",
+    "name": "Worker Node M",
+    "status": "offline",
+    "cpuUsage": 2,
+    "memoryUsage": 0.6,
+    "timestamp": "2023-10-27T12:35:00Z"
+  },
+  {
+    "id": "node-14",
+    "name": "Worker Node N",
+    "status": "online",
+    "cpuUsage": 89,
+    "memoryUsage": 4.3,
+    "timestamp": "2023-10-27T11:47:00Z"
+  },
+  {
+    "id": "node-15",
+    "name": "Worker Node O",
+    "status": "maintenance",
+    "cpuUsage": 7,
+    "memoryUsage": 7.0,
+    "timestamp": "2023-10-27T12:03:00Z"
+  },
+  {
+    "id": "node-16",
+    "name": "Worker Node P",
+    "status": "online",
+    "cpuUsage": 86,
+    "memoryUsage": 13.5,
+    "timestamp": "2023-10-27T11:40:00Z"
+  },
+  {
+    "id": "node-17",
+    "name": "Worker Node Q",
+    "status": "online",
+    "cpuUsage": 31,
+    "memoryUsage": 11.0,
+    "timestamp": "2023-10-27T12:54:00Z"
+  },
+  {
+    "id": "node-18",
+    "name": "Worker Node R",
+    "status": "maintenance",
+    "cpuUsage": 20,
+    "memoryUsage": 1.0,
+    "timestamp": "2023-10-27T12:51:00Z"
+  },
+  {
+    "id": "node-19",
+    "name": "Worker Node S",
+    "status": "online",
+    "cpuUsage": 36,
+    "memoryUsage": 3.3,
+    "timestamp": "2023-10-27T12:23:00Z"
+  },
+  {
+    "id": "node-20",
+    "name": "Worker Node T",
+    "status": "online",
+    "cpuUsage": 86,
+    "memoryUsage": 11.3,
+    "timestamp": "2023-10-27T12:08:00Z"
+  },
+  {
+    "id": "node-21",
+    "name": "Worker Node U",
+    "status": "online",
+    "cpuUsage": 12,
+    "memoryUsage": 4.3,
+    "timestamp": "2023-10-27T11:49:00Z"
+  },
+  {
+    "id": "node-22",
+    "name": "Worker Node V",
+    "status": "offline",
+    "cpuUsage": 3,
+    "memoryUsage": 0.3,
+    "timestamp": "2023-10-27T12:17:00Z"
+  },
+  {
+    "id": "node-23",
+    "name": "Worker Node W",
+    "status": "maintenance",
+    "cpuUsage": 18,
+    "memoryUsage": 7.1,
+    "timestamp": "2023-10-27T12:35:00Z"
+  },
+  {
+    "id": "node-24",
+    "name": "Worker Node X",
+    "status": "online",
+    "cpuUsage": 68,
+    "memoryUsage": 6.8,
+    "timestamp": "2023-10-27T13:57:00Z"
+  },
+  {
+    "id": "node-25",
+    "name": "Worker Node Y",
+    "status": "online",
+    "cpuUsage": 23,
+    "memoryUsage": 4.8,
+    "timestamp": "2023-10-27T12:36:00Z"
+  },
+  {
+    "id": "node-26",
+    "name": "Worker Node Z",
+    "status": "offline",
+    "cpuUsage": 4,
+    "memoryUsage": 0.3,
+    "timestamp": "2023-10-27T13:24:00Z"
+  },
+  {
+    "id": "node-27",
+    "name": "Worker Node A 2",
+    "status": "online",
+    "cpuUsage": 79,
+    "memoryUsage": 6.9,
+    "timestamp": "2023-10-27T12:43:00Z"
+  },
+  {
+    "id": "node-28",
+    "name": "Worker Node B 2",
+    "status": "maintenance",
+    "cpuUsage": 4,
+    "memoryUsage": 4.3,
+    "timestamp": "2023-10-27T12:31:00Z"
+  },
+  {
+    "id": "node-29",
+    "name": "Worker Node C 2",
+    "status": "offline",
+    "cpuUsage": 0,
+    "memoryUsage": 0.2,
+    "timestamp": "2023-10-27T12:45:00Z"
+  },
+  {
+    "id": "node-30",
+    "name": "Worker Node D 2",
+    "status": "offline",
+    "cpuUsage": 3,
+    "memoryUsage": 0.6,
+    "timestamp": "2023-10-27T13:19:00Z"
+  },
+  {
+    "id": "node-31",
+    "name": "Worker Node E 2",
+    "status": "online",
+    "cpuUsage": 64,
+    "memoryUsage": 8.8,
+    "timestamp": "2023-10-27T13:45:00Z"
+  },
+  {
+    "id": "node-32",
+    "name": "Worker Node F 2",
+    "status": "offline",
+    "cpuUsage": 0,
+    "memoryUsage": 0.7,
+    "timestamp": "2023-10-27T12:54:00Z"
+  },
+  {
+    "id": "node-33",
+    "name": "Worker Node G 2",
+    "status": "online",
+    "cpuUsage": 73,
+    "memoryUsage": 12.2,
+    "timestamp": "2023-10-27T14:23:00Z"
+  },
+  {
+    "id": "node-34",
+    "name": "Worker Node H 2",
+    "status": "online",
+    "cpuUsage": 19,
+    "memoryUsage": 5.3,
+    "timestamp": "2023-10-27T13:10:00Z"
+  },
+  {
+    "id": "node-35",
+    "name": "Worker Node I 2",
+    "status": "online",
+    "cpuUsage": 38,
+    "memoryUsage": 15.6,
+    "timestamp": "2023-10-27T14:32:00Z"
+  },
+  {
+    "id": "node-36",
+    "name": "Worker Node J 2",
+    "status": "online",
+    "cpuUsage": 18,
+    "memoryUsage": 14.0,
+    "timestamp": "2023-10-27T13:38:00Z"
+  },
+  {
+    "id": "node-37",
+    "name": "Worker Node K 2",
+    "status": "offline",
+    "cpuUsage": 4,
+    "memoryUsage": 0.6,
+    "timestamp": "2023-10-27T13:24:00Z"
+  },
+  {
+    "id": "node-38",
+    "name": "Worker Node L 2",
+    "status": "online",
+    "cpuUsage": 25,
+    "memoryUsage": 9.0,
+    "timestamp": "2023-10-27T14:49:00Z"
+  },
+  {
+    "id": "node-39",
+    "name": "Worker Node M 2",
+    "status": "maintenance",
+    "cpuUsage": 0,
+    "memoryUsage": 5.0,
+    "timestamp": "2023-10-27T14:17:00Z"
+  },
+  {
+    "id": "node-40",
+    "name": "Worker Node N 2",
+    "status": "online",
+    "cpuUsage": 51,
+    "memoryUsage": 14.2,
+    "timestamp": "2023-10-27T15:06:00Z"
+  },
+  {
+    "id": "node-41",
+    "name": "Worker Node O 2",
+    "status": "offline",
+    "cpuUsage": 1,
+    "memoryUsage": 0.1,
+    "timestamp": "2023-10-27T15:17:00Z"
+  },
+  {
+    "id": "node-42",
+    "name": "Worker Node P 2",
+    "status": "online",
+    "cpuUsage": 15,
+    "memoryUsage": 2.1,
+    "timestamp": "2023-10-27T14:32:00Z"
+  },
+  {
+    "id": "node-43",
+    "name": "Worker Node Q 2",
+    "status": "offline",
+    "cpuUsage": 4,
+    "memoryUsage": 0.8,
+    "timestamp": "2023-10-27T13:51:00Z"
+  },
+  {
+    "id": "node-44",
+    "name": "Worker Node R 2",
+    "status": "online",
+    "cpuUsage": 75,
+    "memoryUsage": 3.3,
+    "timestamp": "2023-10-27T14:47:00Z"
+  },
+  {
+    "id": "node-45",
+    "name": "Worker Node S 2",
+    "status": "offline",
+    "cpuUsage": 3,
+    "memoryUsage": 1.0,
+    "timestamp": "2023-10-27T15:43:00Z"
+  },
+  {
+    "id": "node-46",
+    "name": "Worker Node T 2",
+    "status": "online",
+    "cpuUsage": 93,
+    "memoryUsage": 3.9,
+    "timestamp": "2023-10-27T14:29:00Z"
+  },
+  {
+    "id": "node-47",
+    "name": "Worker Node U 2",
+    "status": "online",
+    "cpuUsage": 90,
+    "memoryUsage": 10.7,
+    "timestamp": "2023-10-27T14:51:00Z"
+  },
+  {
+    "id": "node-48",
+    "name": "Worker Node V 2",
+    "status": "offline",
+    "cpuUsage": 3,
+    "memoryUsage": 0.1,
+    "timestamp": "2023-10-27T14:28:00Z"
+  },
+  {
+    "id": "node-49",
+    "name": "Worker Node W 2",
+    "status": "online",
+    "cpuUsage": 7,
+    "memoryUsage": 9.7,
+    "timestamp": "2023-10-27T14:34:00Z"
+  },
+  {
+    "id": "node-50",
+    "name": "Worker Node X 2",
+    "status": "online",
+    "cpuUsage": 5,
+    "memoryUsage": 1.9,
+    "timestamp": "2023-10-27T15:30:00Z"
+  }
+]
