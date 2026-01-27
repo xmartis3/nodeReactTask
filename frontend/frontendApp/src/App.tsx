@@ -5,10 +5,12 @@ import type { NodeData } from "./types/NodeData";
 
 function App() {
   const [nodes, setNodes] = useState<NodeData[]>([]);
-  const [filter, setFilter] = useState<string>("all");
+  const [filterData, setFilterData] = useState<string>("all");
   useEffect(() => {
     const fetchNodes = async () => {
       const res = await axios.get(`/api/nodes`);
+      console.log(res);
+
       setNodes(res.data);
     };
     fetchNodes();
@@ -24,7 +26,7 @@ function App() {
           className="border border-gray-600 rounded-2xl "
           id="filter"
           onChange={(e) => {
-            setFilter(e.target.value);
+            setFilterData(e.target.value);
           }}
         >
           <option value="all">ALL</option>
@@ -35,9 +37,9 @@ function App() {
       </span>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 mt-5">
         {nodes
-          .filter((node) => filter === "all" || filter === node.status)
+          .filter((node) => filterData === "all" || filterData === node.status)
           .map((node) => (
-            <Node node={node} />
+            <Node key={node.id} node={node} />
           ))}
       </div>
     </div>
