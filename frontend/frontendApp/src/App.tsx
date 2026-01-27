@@ -9,7 +9,6 @@ function App() {
   useEffect(() => {
     const fetchNodes = async () => {
       const res = await axios.get(`/api/nodes`);
-      console.log(res);
 
       setNodes(res.data);
     };
