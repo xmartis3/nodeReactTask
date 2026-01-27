@@ -28,7 +28,7 @@ function changeUsage() {
 }
 
 setInterval(changeUsage, 1000);
-app.get("/api/nodes", (req: Request, resp: Response) => {
+app.get("/api/nodes", (_req: Request, resp: Response) => {
   resp.send(data);
 });
 
