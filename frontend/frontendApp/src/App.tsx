@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Node from "./components/Node";
 
 import type { Filter, NodeData } from "./types/NodeData";
-import { FILTERS, STATUSES } from "./types/NodeData";
+import { FILTERS } from "./types/NodeData";
 import axios from "axios";
 
 function App() {
@@ -33,8 +33,7 @@ function App() {
             }
           }}
         >
-          <option value="all">ALL</option>
-          {STATUSES.map((stat) => (
+          {FILTERS.map((stat) => (
             <option key={stat}>{stat.toUpperCase()}</option>
           ))}
         </select>

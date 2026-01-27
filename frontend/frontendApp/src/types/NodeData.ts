@@ -1,5 +1,4 @@
 export type Status = "online" | "offline" | "maintenance";
-export const STATUSES = ["online", "offline", "maintenance"] as const;
 
 export const FILTERS = ["all", "online", "offline", "maintenance"] as const;
 export type Filter = (typeof FILTERS)[number];
