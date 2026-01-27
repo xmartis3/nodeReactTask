@@ -1,19 +1,21 @@
 import { useEffect, useState } from "react";
 import Node from "./components/Node";
+
+import type { Filter, NodeData } from "./types/NodeData";
+import { FILTERS, STATUSES } from "./types/NodeData";
 import axios from "axios";
-import type { NodeData } from "./types/NodeData";
 
 function App() {
   const [nodes, setNodes] = useState<NodeData[]>([]);
-  const [filterData, setFilterData] = useState<string>("all");
+  const [filterData, setFilterData] = useState<Filter>("all");
   useEffect(() => {
     const fetchNodes = async () => {
       const res = await axios.get(`/api/nodes`);
-
       setNodes(res.data);
     };
+
     fetchNodes();
-    setInterval(fetchNodes, 1000);
+    // setInterval(fetchNodes, 1000);
   }, []);
 
   return (
@@ -25,18 +27,23 @@ function App() {
           className="border border-gray-600 rounded-2xl "
           id="filter"
           onChange={(e) => {
-            setFilterData(e.target.value);
+            const val: Filter = e.target.value.toLowerCase() as Filter;
+            if (FILTERS.includes(val)) {
+              setFilterData(val);
+            }
           }}
         >
           <option value="all">ALL</option>
-          <option value="online">ONLINE</option>
-          <option value="offline">OFFLINE</option>
-          <option value="maintenance">MAINTENANCE</option>
+          {STATUSES.map((stat) => (
+            <option key={stat}>{stat.toUpperCase()}</option>
+          ))}
         </select>
       </span>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 mt-5">
         {nodes
-          .filter((node) => filterData === "all" || filterData === node.status)
+          .filter(
+            (node) => filterData == FILTERS[0] || filterData == node.status
+          )
           .map((node) => (
             <Node key={node.id} node={node} />
           ))}
