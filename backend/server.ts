@@ -1,9 +1,9 @@
 import * as fs from "fs";
-import { NodeData, Status } from "./types/NodeData";
+import { NodeData } from "./types/NodeData";
 import { Response, Request } from "express";
+import { Status } from "./types/NodeStatus";
 
 const express = require("express");
-
 const app = express();
 const PORT = Number(process.env.PORT ?? 5050);
 const cors = require("cors");

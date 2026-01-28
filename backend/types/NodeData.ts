@@ -1,8 +1,4 @@
-export enum Status {
-  online = "online",
-  offline = "offline",
-  maintenance = "maintenance"
-}
+import { Status } from "./NodeStatus";
 
 export type NodeData = {
   id: string;
