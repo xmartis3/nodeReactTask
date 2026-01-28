@@ -17,10 +17,27 @@ const data: NodeData[] = JSON.parse(
 
 function changeUsage() {
   data.forEach((element) => {
-    if (element.status !== Status.online) {
-      return;
+    const num = Math.round(Math.random() * 10) % 3;
+
+    switch (num) {
+      case 0:
+        element.status = Status.online;
+        break;
+      case 1:
+        element.status = Status.offline;
+        break;
+      case 2:
+        element.status = Status.maintenance;
+        break;
+      default:
+        break;
     }
 
+    if (element.status != Status.online) {
+      element.cpuUsage = 0;
+      element.memoryUsage = 0;
+      return;
+    }
     element.cpuUsage = Math.round(Math.random() * 100);
     element.memoryUsage = Math.round(Math.random() * 100) / 10;
     element.timestamp = new Date().toISOString();
