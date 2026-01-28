@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Node from "./components/Node";
 import type { NodeData } from "./types/NodeData";
 import axios from "axios";
@@ -7,6 +7,12 @@ import { FILTERS, type Filter } from "./types/NodeFilter";
 function App() {
   const [nodes, setNodes] = useState<NodeData[]>([]);
   const [filterData, setFilterData] = useState<Filter>("all");
+  const filteredNodes: NodeData[] = useMemo(() => {
+    return nodes.filter(
+      (node) => filterData == FILTERS[0] || filterData == node.status
+    );
+  }, [nodes, filterData]);
+
   useEffect(() => {
     const fetchNodes = async () => {
       const res = await axios.get<NodeData[]>(`/api/nodes`);
@@ -33,19 +39,15 @@ function App() {
             }
           }}
         >
-          {FILTERS.map((stat) => (
-            <option key={stat}>{stat.toUpperCase()}</option>
+          {FILTERS.map((status) => (
+            <option key={status}>{status.toUpperCase()}</option>
           ))}
         </select>
       </span>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 mt-5">
-        {nodes
-          .filter(
-            (node) => filterData == FILTERS[0] || filterData == node.status
-          )
-          .map((node) => (
-            <Node key={node.id} node={node} />
-          ))}
+        {filteredNodes.map((node) => (
+          <Node key={node.id} node={node} />
+        ))}
       </div>
     </div>
   );
