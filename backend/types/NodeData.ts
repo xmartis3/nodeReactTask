@@ -1,7 +1,7 @@
 export enum Status {
-  "online" = "online",
-  "offline" = "offline",
-  "maintenance" = "maintenance"
+  online = "online",
+  offline = "offline",
+  maintenance = "maintenance"
 }
 
 export type NodeData = {

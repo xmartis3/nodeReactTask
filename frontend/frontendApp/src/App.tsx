@@ -1,21 +1,22 @@
 import { useEffect, useState } from "react";
 import Node from "./components/Node";
 
-import type { Filter, NodeData } from "./types/NodeData";
-import { FILTERS } from "./types/NodeData";
+import type { NodeData } from "./types/NodeData";
+
 import axios from "axios";
+import { FILTERS, type Filter } from "./types/NodeFilter";
 
 function App() {
   const [nodes, setNodes] = useState<NodeData[]>([]);
   const [filterData, setFilterData] = useState<Filter>("all");
   useEffect(() => {
     const fetchNodes = async () => {
-      const res = await axios.get(`/api/nodes`);
+      const res = await axios.get<NodeData[]>(`/api/nodes`);
       setNodes(res.data);
     };
 
     fetchNodes();
-    // setInterval(fetchNodes, 1000);
+    setInterval(fetchNodes, 1000);
   }, []);
 
   return (
