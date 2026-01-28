@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import Node from "./components/Node";
-
 import type { NodeData } from "./types/NodeData";
-
 import axios from "axios";
 import { FILTERS, type Filter } from "./types/NodeFilter";
 
@@ -16,7 +14,8 @@ function App() {
     };
 
     fetchNodes();
-    setInterval(fetchNodes, 1000);
+    const id = setInterval(fetchNodes, 1000);
+    return () => clearInterval(id);
   }, []);
 
   return (
